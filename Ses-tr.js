@@ -4,7 +4,7 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch')
 
 exports.run = async (client, message, args) => {
-  if(!message.member.voice.channel) return message.reply('sese gir')
+  if(!message.member.voice.channel) return message.reply('Lütfen Sese Kanalına Giriniz.')
 if(!args[0]) return message.reply('Değer gir')
 if(args[0] == 'yt') {
 const embed = new MessageEmbed()
